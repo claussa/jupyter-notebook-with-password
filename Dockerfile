@@ -6,3 +6,5 @@ RUN pip install matplotlib
 
 COPY start-notebook.sh /usr/local/bin/
 ENTRYPOINT ["/usr/local/bin/start-notebook.sh"]
+
+COPY subjects $HOME
