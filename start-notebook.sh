@@ -3,7 +3,8 @@
 # Distributed under the terms of the Modified BSD License.
 
 set -e
-
+fix-permissions "/home/$NB_USER"
+su $NB_USER
 wrapper=""
 if [[ "${RESTARTABLE}" == "yes" ]]; then
     wrapper="run-one-constantly"
